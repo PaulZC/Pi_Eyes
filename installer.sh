@@ -52,9 +52,9 @@ selectN() {
 CODE_NAMES=("LEFT EYE" "RIGHT EYE" "EYE SERVER")
 echo
 echo "Select which code to run on boot:"
-selectN "${SCREEN_NAMES[0]}" \
-        "${SCREEN_NAMES[1]}" \
-        "${SCREEN_NAMES[2]}"
+selectN "${CODE_NAMES[0]}" \
+        "${CODE_NAMES[1]}" \
+        "${CODE_NAMES[2]}"
 CODE_SELECT=$?
 
 echo
