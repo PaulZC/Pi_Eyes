@@ -107,11 +107,11 @@ pip3 install numpy pi3d==2.34 svg.path rpi-gpio opencv-contrib-python imutils
 
 echo "Installing Adafruit code and data in /boot..."
 cd /tmp
-curl -LO https://github.com/PaulZC/Pi_Eyes/archive/Pi_Eyes.zip
-unzip Pi_Eyes.zip
+curl -LO https://github.com/PaulZC/Pi_Eyes/archive/master.zip
+unzip master.zip
 # Moving between filesystems requires copy-and-delete:
-cp -r Pi_Eyes /boot/Pi_Eyes
-rm -rf master.zip Pi_Eyes
+cp -r Pi_Eyes-master /boot/Pi_Eyes
+rm -rf master.zip Pi_Eyes-master
 
 # CONFIG -------------------------------------------------------------------
 
