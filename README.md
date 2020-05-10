@@ -44,6 +44,12 @@ Raspberry Pi 4 can just about run both eyes and the server at the same time (but
 
 You can remove the eye window banner by right clicking in the banner and selecting _Un/Decorate_.
 
+## Errata
+At the time of writing, you will need to run the server from the command line using the following due to an issue with OpenCV 4.1.1.26
+```
+LD_PRELOAD=/usr/lib/arm-linux-gnueabihf/libatomic.so.1 python3 eye_position_server.py
+```
+
 ## Acknowledgements
 Raspberry Pi is a trademark of the Raspberry Pi Foundation
 
