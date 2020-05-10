@@ -156,9 +156,9 @@ else
 		sed -i "s/^.*eye_position_server.py.*$/cd \/boot\/Pi_Eyes;python3 eye_position_server.py \&/g" /etc/rc.local >/dev/null
 	else
 		# Insert eye_position_server.py into rc.local before final 'exit 0'
-        # Temporary (?) fix for OpenCV
-        #sed -i "s/^exit 0/cd \/boot\/Pi_Eyes;python3 eye_position_server.py \&\\nexit 0/g" /etc/rc.local >/dev/null
-	sed -i "s/^exit 0/cd \/boot\/Pi_Eyes;LD_PRELOAD=/usr/lib/arm-linux-gnueabihf/libatomic.so.1 python3 eye_position_server.py \&\\nexit 0/g" /etc/rc.local >/dev/null
+    # Temporary (?) fix for OpenCV
+    #sed -i "s/^exit 0/cd \/boot\/Pi_Eyes;python3 eye_position_server.py \&\\nexit 0/g" /etc/rc.local >/dev/null
+		sed -i "s/^exit 0/cd \/boot\/Pi_Eyes;LD_PRELOAD=\/usr\/lib\/arm-linux-gnueabihf\/libatomic.so.1 python3 eye_position_server.py \&\\nexit 0/g" /etc/rc.local >/dev/null
 	fi
 fi
 
