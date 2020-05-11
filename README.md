@@ -21,7 +21,6 @@ Set one to LEFT EYE, one to RIGHT EYE, and the one with the camera to EYE SERVER
 cd ~
 curl https://raw.githubusercontent.com/PaulZC/Pi_Eyes/master/installer.sh >installer.sh
 sudo bash installer.sh
-
 ```
 The code is installed into ```\boot\Pi_Eyes```
 
