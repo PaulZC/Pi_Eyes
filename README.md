@@ -15,6 +15,9 @@ The server needs to have the camera interface enabled.
 You do not need the Adafruit Snake Eyes Bonnet. This remix only supports HDMI.
 
 ## Installation
+
+_These are abbreviated installation instructions. See [INSTALL.md](./INSTALL.md) for more complete instructions._
+
 Run the following script to install the code on each of the three Pi's.
 Set one to LEFT EYE, one to RIGHT EYE, and the one with the camera to EYE SERVER
 ```
