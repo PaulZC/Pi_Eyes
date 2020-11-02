@@ -25,7 +25,7 @@ cd ~
 curl https://raw.githubusercontent.com/PaulZC/Pi_Eyes/master/installer.sh >installer.sh
 sudo bash installer.sh
 ```
-The code is installed into ```\boot\Pi_Eyes```
+The code is installed into ```/boot/Pi_Eyes```
 
 If you want to stop the code running on boot:
 ```

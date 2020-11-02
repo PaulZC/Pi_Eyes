@@ -150,7 +150,7 @@ elif [ $CODE_SELECT -eq 2 ]; then
 	fi
 else
 	# Auto-start eye_position_server.py on boot
-	grep eye_right_client.py /etc/rc.local >/dev/null
+	grep eye_position_server.py /etc/rc.local >/dev/null
 	if [ $? -eq 0 ]; then
 		# eye_position_server.py already in rc.local, but make sure correct:
 		sed -i "s/^.*eye_position_server.py.*$/cd \/boot\/Pi_Eyes;python3 eye_position_server.py \&/g" /etc/rc.local >/dev/null
